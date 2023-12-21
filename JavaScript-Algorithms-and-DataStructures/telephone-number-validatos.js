@@ -12,6 +12,7 @@ const validatePhoneNumbersLengt = (str)=> {
   }
   //then we veryfy that length === 10 or 11.
   if (temp.length === (10) ) return true;
+  if(temp[0]!= 1) return false;
   if (temp.length === (11) ) return true;
   console.log('number ->',temp)
   return false
